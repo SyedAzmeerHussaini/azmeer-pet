@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PET Bottle Project</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#bottles">Bottles</a>
+        <a href="#jars">Steel Bottles</a>
+        <!-- <a href="#gallery">Gallery</a> -->
+        <a href="about.html">About Us</a>
+        <!-- <a href="#queries">Queries</a> -->
+        <a href="#contact">Contact Us</a>
+        <!-- <a href="#feedback">Feedback</a> -->
+    </nav>
+    <header>
+        <img src="assets/img/Gemini_Generated_Image_iwhqg3iwhqg3iwhq.png" class="logo">
+        <h1>PET Bottle Manufacturing Website</h1>
+        <p>High Quality Glass Bottles & Steel Bottles</p>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1">
+                                <img src="assets/img/Glass Water Bottle 1.jpg" alt="">
+                            </button>
+                        </div> -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/steel bottle1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="pr_info_get">
+                    <h1 id="prName">Steel Bottle</h1>
+                    <p>Insulated Water Bottle, 800 ML Black Speed Stainless Steel Water Bottle for
+                            12 Hours Hot & Cold</p>
+                    <h2 id="prPrice">$ 10</h2>
+                    <div class="rating">
+                        <span class="me-2">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="me-2">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="me-2">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="me-2">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="me-2">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="input-group my-3 w-50" onclick="decrement()">
+                        <span class="input-group-text">
+                            <span>
+                                <i class="fa-solid fa-circle-minus"></i>
+                            </span>
+                        </span>
+                        <input type="text" value="1" id="prQuantity" class="form-control">
+                        <span class="input-group-text" onclick="increment()">
+                            <span>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="orderPlaced()">Order Place</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottles" class="products">
+        <h2>Best Selling</h2>
+        <div class="row">
+
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/Glass Water Bottle 1.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Transparent Beverage Bottle- 850ml</h5>
+                        <p class="card-text">Stylish Sleek Transparent Beverage Bottle, Capacity- 850 Ml- B3, Glass,
+                            Food Grade, Best For Water, Juice</p>
+                        <p>$12</p>
+                        <a href="productdetail1.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/Glass Water Bottle.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Transparent Time Scale Water Bottle- 500ml</h5>
+                        <p class="card-text">Glass Water Bottle with Time Scale, High Temperature Resistance, Large
+                            Capacity, Best For Water, Juice</p>
+                        <p>$ 11</p>
+                        <a href="productdetail2.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/Glass Water Bottle 2.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Transparent Beverage Bottle- 850ml</h5>
+                        <p class="card-text">Stylish Sleek Transparent Beverage Bottle, Capacity- 850 Ml- B2, Glass,
+                            Food Grade, Best For Water, Milk</p>
+                        <p>$ 9</p>
+                        <a href="productdetail3.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jars" class="products">
+        <h2>Steel Bottles</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/steel bottles.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Steel Bottle</h5>
+                        <p class="card-text">Insulated Water Bottle, 1 Litre Stainless Steel Water Bottle for 12 Hours
+                            Hot &amp; Cold</p>
+                        <p>$ 8</p>
+                        <a href="productdetail4.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/temperature bottles.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Temperature Bottle</h5>
+                        <p class="card-text">Temperature Display Vacuum Insulated Water Bottle 17oz,Thermo Flask Made of
+                            Premium Stainless Stee</p>
+                        <p>$ 9</p>
+                        <a href="productdetail5.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-3 mb-3">
+                <div class="card overflow-hidden">
+                    <img src="assets/img/steel bottle1.jpg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Steel Bottle</h5>
+                        <p class="card-text">Insulated Water Bottle, 800 ML Black Speed Stainless Steel Water Bottle for
+                            12 Hours Hot &amp; Cold</p>
+                        <p>$ 10</p>
+                        <a href="productdetail6.html" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="bottle1.jpg">
+        <img src="bottle2.jpg">
+        <p>
+            <b>Specification:</b><br>
+            Capacity: 500ml, 1L<br>
+            Material: PET Plastic<br>
+            Price: Rs. 30 – Rs. 60
+        </p> -->
+    </section>
+
+    <section class="about_section">
+        <div class="container about_paragraph">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_image_container">
+                        <img class="about_img w-100" src="assets/img/about image.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_content">
+                        <h2>Our Facilities</h2>
+                        <p>The Stanley Quencher Tumble: Designed for all-day hydration, the Stanley Quencher H2.0
+                            FlowState™
+                            Tumbler is the centerpiece of the modern wellness aesthetic. Crafted from recycled stainless
+                            steel
+                            with double-wall vacuum insulation, it is engineered to keep drinks ice-cold for hours. Its
+                            signature feature is the ergonomic, comfort-grip handle and the versatile FlowState™ lid,
+                            which
+                            offers three positions: a straw opening, a wide mouth for chugging, and a full-cover top to
+                            prevent
+                            splashes. The tapered base allows it to fit conveniently in almost any vehicle cup holder.
+                        </p>
+
+                        <!-- <p>The Glass Iced Coffee Sipper: The Glass Iced Coffee Mug is the ultimate vessel for the home
+                            barista.
+                            Made from high-quality, lead-free borosilicate glass, it provides a crystal-clear view of
+                            the
+                            beautiful "coffee marble" effect as cream mixes with espresso. Its lightweight yet durable
+                            design
+                            features a comfortable C-shaped handle, making it perfect for cold brews, iced lattes, or
+                            protein
+                            shakes. It brings a touch of cafe-style luxury to the desk or kitchen counter, turning a
+                            daily
+                            caffeine fix into a visual experience.</p> -->
+
+                        <!-- <p>The Infused Glass Water Bottle: Minimalist and eco-friendly, the Silicone-Sleeved Glass Water
+                            Bottle
+                            is designed for pure, crisp hydration. Unlike plastic, the glass construction ensures no
+                            metallic or
+                            chemical aftertaste, making it ideal for fruit-infused waters like the lemon and mint seen
+                            here. The
+                            soft-touch silicone sleeve provides a non-slip grip and helps protect the glass from bumps,
+                            while
+                            the natural bamboo or wooden lid adds an organic, earthy finish to the clean design.</p> -->
+
+                        <a href="about.html" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="row">
+            <div class="col-lg-12 mb-5">
+                <h1 class="text-center">Contact Us</h1>
+            </div>
+            <div class="col-lg-6 contact_info">
+                <p class="mb-4"><span><i class="fa-solid fa-envelope"></i></span> <a
+                        href="mailto:info@petbottle.com">info@petbottle.com</a></p>
+                <p class="mb-4"><span><i class="fa-solid fa-phone"></i></span> <a
+                        href="tel:0300-1234567">0300-1234567</a></p>
+                <p class="mb-4"><span><i class="fa-solid fa-location-dot"></i></span> Scheme 33 Karachi Pakistan</p>
+                <div>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="facebook.com">
+                                <span><i class="fa-brands fa-facebook"></i></span>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="instagram.com">
+                                <span><i class="fa-brands fa-square-instagram"></i></span>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="twitter.com">
+                                <span><i class="fa-brands fa-square-twitter"></i></span>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="google.com">
+                                <span><i class="fa-brands fa-google"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form id="contactForm">
+                    Name:<br>
+                    <input type="text" required id="name"><br><br>
+                    Email:<br>
+                    <input type="email" required id="email"><br><br>
+                    Message:<br>
+                    <textarea rows="4" required id="message"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 px-0">
+                    <!-- insert map -->
+                    <!-- using a responsive iframe -->
+                    <div class="responsive-map-container">
+                        <!-- place the iframe code between here... -->
+                        <iframe class="w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786"
+                            height="450" frameborder="0" style="border:0"></iframe>
+                        <!-- ... and here -->
+                    </div>
+                    <!-- /insert map -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 PET Bottle Project</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (!name && !email && !message) {
+                alert("Please Fill All Fields")
+            } else {
+                Swal.fire(
+                    'We will contact you soon',
+                    'Thanks for Contacting Us',
+                    'success' // Icon type
+                );
+            }
+        });
+
+        function orderPlaced() {
+
+            document.getElementById("prName").innerText;
+            document.getElementById("prPrice").innerText;
+            document.getElementById("prQuantity").value;
+
+            if (document.getElementById("prQuantity").value > 0) {
+                Swal.fire(
+                    'Good Job',
+                    'Your Order is Placed Successfully',
+                    'success' // Icon type
+                );
+            } else {
+                Swal.fire(
+                    'Bad Job',
+                    'Your Order is not Placed Please insert Quantity',
+                    'error' // Icon type
+                );
+            }
+        }
+
+        var currentCount = 1;
+
+        function increment() {
+            currentCount++;
+            document.getElementById("prQuantity").value = currentCount;
+            return currentCount++;
+        }
+
+        function decrement() {
+            if (currentCount > 1) currentCount--;
+            document.getElementById("prQuantity").value = currentCount;
+            return currentCount;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
